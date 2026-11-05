@@ -76,6 +76,13 @@ h2{margin:0;font-size:44px;line-height:1.12;font-weight:800;letter-spacing:-.03e
 .price-value .cur{font-size:24px;margin:14px 6px 0 0;letter-spacing:0}
 .price-value .int{font-size:80px}
 .price-value .dec{font-size:32px;margin-top:8px}
+.hero .price{width:330px}
+.combo{align-items:stretch;gap:0;padding:30px 22px 20px}
+.combo-row{display:flex;align-items:center;gap:12px;text-align:left}
+.combo-row .icon-box{width:40px;height:40px;border-radius:10px}
+.combo-row strong{display:block;font-size:16px;line-height:1.25}
+.combo-row small{display:block;font-size:13px;color:var(--muted);line-height:1.35}
+.combo-plus{margin:2px 0 2px 14px !important;font-size:18px;font-weight:800;color:var(--accent);line-height:1}
 .price-note{font-size:13px;font-weight:600;color:var(--accent-dark);text-align:center}
 
 /* 02 · Problema */
@@ -216,10 +223,11 @@ h2{margin:0;font-size:44px;line-height:1.12;font-weight:800;letter-spacing:-.03e
     <div class="hero-visual">
       <img src="assets/hero-notebook.png" alt="Notebook exibindo um gráfico de crescimento" width="928" height="680">
       <div class="price">
-        <span class="price-tag">Black Friday</span>
-        <div class="price-card">
-          <p class="price-value" aria-label="R$ 47,90"><span class="cur">R$</span><span class="int">47</span><span class="dec">,90</span></p>
-          <p class="price-note">Kit de ferramentas incluso</p>
+        <span class="price-tag">Aula + Kit</span>
+        <div class="price-card combo">
+          <p class="combo-row"><span class="icon-box"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg></span><span><strong>Aula prática ao vivo</strong><small>Dados e IA aplicados ao seu negócio</small></span></p>
+          <p class="combo-plus" aria-hidden="true">+</p>
+          <p class="combo-row"><span class="icon-box"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></span><span><strong>Kit com 5 ferramentas</strong><small>Para aplicar no dia seguinte</small></span></p>
         </div>
       </div>
     </div>
