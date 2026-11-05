@@ -146,6 +146,15 @@ h2{margin:0;font-size:44px;line-height:1.12;font-weight:800;letter-spacing:-.03e
 .about-text .lab{margin:0;font-size:20px;font-weight:700;color:var(--ink);max-width:620px}
 .about-text p{margin:0;font-size:18px;color:var(--muted-2);max-width:620px}
 
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:10px}
+.person{background:#fff;border:1px solid #E9E4F2;border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.person-head{display:flex;align-items:center;gap:14px}
+.person-head > div{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.about-text .person-head .avatar{flex:none;width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center 25%;border:3px solid var(--lilac);align-self:center}
+.person h3{margin:0;font-size:20px;font-weight:800;letter-spacing:-.01em}
+.role{font-size:13px;font-weight:800;letter-spacing:.02em;color:var(--accent-dark);background:var(--lilac);padding:5px 10px;border-radius:999px}
+.about-text .person p{font-size:15px;color:var(--muted);max-width:none}
+
 /* 06 · Oferta */
 .offer{background:var(--dark);color:#fff}
 .offer .wrap{padding-top:104px;padding-bottom:104px;display:flex;flex-direction:column;align-items:center;gap:40px;text-align:center}
@@ -385,6 +394,16 @@ h2{margin:0;font-size:44px;line-height:1.12;font-weight:800;letter-spacing:-.03e
     <img src="assets/logo-i5lab.png" alt="i5Lab" loading="lazy">
     <p class="lab">Laboratório de Inovação e Tecnologias em Educação.</p>
     <p>Estratégia, gestão e tecnologia aplicadas à transformação de negócios.</p>
+    <div class="people">
+      <div class="person">
+        <div class="person-head"><img class="avatar" src="assets/pablo-roberto.jpg" alt="Foto de Pablo Roberto" width="72" height="72" loading="lazy"><div><h3>Pablo Roberto</h3><span class="role">COO do i5Lab</span></div></div>
+        <p>Doutor em Ciência da Computação, professor e empreendedor. Atua como COO do i5Lab, conectando tecnologia, inteligência artificial e estratégia para impulsionar negócios e inovação.</p>
+      </div>
+      <div class="person">
+        <div class="person-head"><img class="avatar" src="assets/angelica-felix.jpg" alt="Foto de Angélica Félix" width="72" height="72" loading="lazy"><div><h3>Angélica Félix</h3><span class="role">CEO do i5Lab</span></div></div>
+        <p>Mestre em Computação, professora e empreendedora. Atua como CEO do i5Lab, liderando iniciativas de tecnologia, inovação e transformação de negócios.</p>
+      </div>
+    </div>
   </div>
 </section>
 
